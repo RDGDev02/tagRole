@@ -1,0 +1,478 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@font-face { font-family: OpenSans; src: url('../font/OpenSans-Regular.ttf'); }
+@font-face { font-family: Spantaran; src: url('../font/Spantaran.ttf'); }
+body {
+  overflow: hidden;
+  font-family: OpenSans;
+  color: white;
+  background-color: black !important;
+ 
+}
+
+a {
+  color: #009961;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cc81;
+  text-decoration: none;
+}
+h1{
+  font-family: Spantaran;
+  letter-spacing: 2px;
+}
+h2, h3, h4, h5, h6 {
+  font-family: OpenSans;
+}
+
+.gradientTag {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  background: -webkit-linear-gradient(left,#ff0000, #3366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientTagGamma {
+  background: -webkit-linear-gradient(left,#ff0000, #ff4133);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientTagBeta {
+  background: -webkit-linear-gradient(left,#ff9100, #ff8533);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientTagAlpha {
+  margin: 0 0 10px 0;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 56px;
+  background: -webkit-linear-gradient(left,#eeff00, #e0ff33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Get Startet Button */
+.get-started-btn {
+  margin-left: 25px;
+  background: linear-gradient(to right, #ff0000 -16%, #3366ff 114%);;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+.get-started-btn:hover {
+  background: #00b371;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .get-started-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 120vh;
+  background: url("../img/rdgNFT/hero-bg.jpg")  center;
+  background-size: cover;
+  margin-top: -150px;
+  
+  
+}
+#hero:before {
+  content: "";
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  padding-top: 72px;
+  text-align: center;
+}
+#hero h1 {
+  
+}
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+#hero .dc-btn {
+  background: linear-gradient(to right, #ff0000 -16%, #3366ff 114%);
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 20px;
+  display: inline-block;
+  z-index: 1001;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+#hero .dc-btn:hover {
+  background: red;
+  color: #fff;
+  
+}
+@media (max-width: 992px) {
+  #hero .dc-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  
+  
+}
+@media (max-width: 768px) {
+  #hero {
+    background: url("../img/rdgNFT/bgMobile.jpg") top center;
+  }
+  #hero h1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .bottom-right {
+   
+    bottom: 0 !important; 
+  }
+  .conLottie{
+    margin-top: 200px !important;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  #hero {
+    background: url("../img/rdgNFT/bgMobile.jpg") top center;
+    background-size: cover;
+  }
+  .conLottie{
+    margin-top: 200px !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #hero {
+    background: url("../img/rdgNFT/bgMobile.jpg") top center;
+    background-size: cover;
+  }
+  .conLottie{
+    margin-top: 300px !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 339px) {
+  .socialHide{
+    display: none !important;
+  }
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+.titleHead{
+  margin: 0 0 10px 0;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 56px;
+  background: -webkit-linear-gradient(left,#ff0000, #3366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desSize2{
+  font-size: 12px !important;
+  background: -webkit-linear-gradient(left,#ff0000, #3366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.tagFilter{
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  background: -webkit-linear-gradient(left,#ff0000, #3366ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Spantaran;
+  letter-spacing: 2px;
+}
+
+.tagTraits{
+  font-family: Spantaran !important;
+  letter-spacing: 2px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.rank{
+  font-size: 15px !important;
+  color: red;
+  font-weight: bold;
+}
+.card-body{
+  padding: 0 !important;
+}
+
+.noPad{
+  padding: 0 !important;
+  max-height: calc(100vh - 200px) !important;
+  
+}
+.traitsDiv{
+  background: -webkit-linear-gradient(left,#ff0000, #3366ff);
+}
+
+.table-dark2 {
+  --bs-table-bg: black;
+  --bs-table-striped-bg: black;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: black;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: black;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+  border-color: black
+}
+  /* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+.scrollbar::-webkit-scrollbar {
+  background-color:black !important;
+  width:16px !important;
+}
+
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+  background-color:black !important;
+}
+.scrollbar::-webkit-scrollbar-track:hover {
+ 
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color:gray!important;
+  border-radius:16px !important;
+  border:5px solid black!important;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+ 
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {display:none !important;}
+
+.grid-view_image{
+  cursor: pointer;
+}
+.gradientTagT1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  background: linear-gradient(78deg, rgba(255,238,149,1) 0%, rgba(111,155,240,1) 40%, rgba(87,141,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#hero #lottie{
+  background-color:transparent;
+  overflow: hidden;
+  margin: auto;
+  z-index: 999;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+  display: inline-block;
+  z-index: 1001;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  height: 95%;
+ 
+}
+.preload-font {
+  visibility: hidden;
+}
+.hide{
+  visibility: hidden;
+}
+.conLottie{
+  margin-top: 100px;
+}
+
+
+.social-menu ul{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.social-menu ul li .fab{
+  font-size: 30px;
+  line-height: 55px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: flex; /* Center content horizontally */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: rgba(0, 0, 0, 0.829);
+  color: #eee;
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+  color: #eee;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+  color: #eee;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #7289DA;
+  color: #eee;
+}
+@media (max-width: 768px) {
+  .social-menu ul {
+      justify-content: center; /* Center the items horizontally */
+  }
+  
+  .social-menu ul li {
+      margin: 0 10px; /* Reduce margin between items */
+  }
+  
+  .social-menu ul li a {
+      width: 40px; /* Reduce the icon size */
+      height: 40px;
+      line-height: 40px; /* Adjust line height for vertically centered text */
+  }
+  
+  .social-menu ul li a{
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #hero #lottie{
+    width: 70%;
+    height: 70%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #hero #lottie{
+    width: 85%;
+    height: 85%;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  #hero #lottie{
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #hero #lottie{
+    width: 95%;
+    height: 95%;
+  }
+}
