@@ -30,7 +30,7 @@ app.use(
     },
   })
 );
-app.use(express.static('public'));
+app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('index');
