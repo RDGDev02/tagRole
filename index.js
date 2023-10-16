@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const expressSession = require('express-session');
 const ejs = require('ejs');
 const session = require('express-session');
+const path = require('path');
 
 dotenv.config();
 
