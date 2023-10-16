@@ -46,9 +46,8 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/callback', async (req, res) => {
-  try {
-    // ... existing code ...
-    const code = req.query.code;
+  
+  const code = req.query.code;
   const tokenURL = 'https://discord.com/api/oauth2/token';
 
   const data = {
@@ -143,12 +142,6 @@ app.get('/callback', async (req, res) => {
     console.error('Error exchanging code for token:', error);
     res.redirect('/'); // Redirect to the root URL on authentication failure.
   }
-
-  } catch (error) {
-    console.error('Error in /callback:', error);
-    res.status(500).send('Internal Server Error'); // Respond with an error status
-  }
-  
 });
 
 app.get('/dashboard', (req, res) => {
