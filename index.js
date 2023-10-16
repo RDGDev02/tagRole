@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const expressSession = require('express-session');
 const ejs = require('ejs');
 const session = require('express-session');
+const path = require('path');
 
 dotenv.config();
 
@@ -18,8 +19,6 @@ const port = 3000;
 
 
 
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
 
 app.use(
   expressSession({
@@ -31,7 +30,9 @@ app.use(
     },
   })
 );
-app.use(express.static('public'));
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
